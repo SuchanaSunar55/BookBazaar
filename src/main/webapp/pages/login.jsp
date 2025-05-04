@@ -17,15 +17,15 @@
 				<div class="card shadow">
 					<div class="card-body">
 						<h4 class="text-center mb-4">Login Form</h4>
-						
+
 
 						<!-- Error Message Display -->
 						<c:if test="${not empty failedMsg}">
 							<h5 class="text-center text-danger">${failedMsg}</h5>
-							<c:remove var="failedMsg" scope="session"/>
+							<c:remove var="failedMsg" scope="session" />
 						</c:if>
-					
-						
+
+
 
 						<!-- Login Form -->
 						<form action="${pageContext.request.contextPath}/login" method="post">

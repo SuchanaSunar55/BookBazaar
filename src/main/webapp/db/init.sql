@@ -11,7 +11,8 @@ CREATE TABLE User (
     Country VARCHAR(50),
     Registration_Date DATE,
     Status VARCHAR(20),
-    Date_of_birth DATE
+    Date_of_birth DATE,
+    role ENUM('CUSTOMER', 'ADMIN') DEFAULT 'CUSTOMER'
 );
 
 -- CART TABLE
@@ -27,7 +28,7 @@ CREATE TABLE Cart (
 
 -- ORDER TABLE
 CREATE TABLE `Order` (
-    Order_ID INT PRIMARY KEY,
+    Order_ID INT AUTO_INCREMENT PRIMARY KEY,
     Cart_ID INT,
     Order_Date DATE,
     Total_Amount DECIMAL(10,2),
@@ -50,7 +51,7 @@ CREATE TABLE `Order` (
 
 -- BOOK TABLE
 CREATE TABLE Book (
-    Book_ID INT PRIMARY KEY,
+    Book_ID INT AUTO_INCREMENT PRIMARY KEY,
     Title VARCHAR(255),
     Author VARCHAR(100),
     ISBN VARCHAR(20),
@@ -62,12 +63,15 @@ CREATE TABLE Book (
     Pages INT,
     Book_Description TEXT,
     Rating DECIMAL(2,1),
-    Status VARCHAR(20)
+    Status VARCHAR(20),
+    Category VARCHAR(100),
+    Photo VARCHAR(255)
 );
+
 
 -- GENRE TABLE
 CREATE TABLE Genre (
-    Genre_ID INT PRIMARY KEY,
+    Genre_ID INT AUTO_INCREMENT PRIMARY KEY,
     Name VARCHAR(50),
     Genre_Description TEXT,
     Genre_Status VARCHAR(20)

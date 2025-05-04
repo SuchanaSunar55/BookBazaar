@@ -55,7 +55,11 @@
 				<i class="fa-solid fa-gear"></i>Setting
 			</button>
 			<button class="btn btn-light my-2 my-sm-0 ml-1" type="submit">
-				<i class="fa-solid fa-phone"></i>Contact Us
+				<a class="nav-link" href="../pages/aboutus.jsp"><i class="fa-solid fa-users"></i> About Us</a>
+			</button>
+			<button class="btn btn-light my-2 my-sm-0 ml-1" type="submit">
+				<a class="nav-link" href="/EBook/pages/contactus.jsp"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+
 			</button>
 		</form>
 	</div>

@@ -13,6 +13,7 @@ public class User {
 	private String Registration_date;
 	private String Status;
 	private String Date_of_birth;
+	private String role;
 	
 	public User() {
 		super();
@@ -91,15 +92,26 @@ public class User {
 	public void setDate_of_birth(String date_of_birth) {
 		Date_of_birth = date_of_birth;
 	}
-
-	@Override
-	public String toString() {
-		return "User [User_ID=" + User_ID + ", User_name=" + User_name + ", Email=" + Email + ", Password=" + Password
-				+ ", Phone=" + Phone + ", Address=" + Address + ", City=" + City + ", Postal_code=" + Postal_code
-				+ ", Country=" + Country + ", Registration_date=" + Registration_date + ", Status=" + Status
-				+ ", Date_of_birth=" + Date_of_birth + "]";
-	}
 	
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+
+
+	
+	  @Override public String toString() { return "User [User_ID=" + User_ID +
+	  ", User_name=" + User_name + ", Email=" + Email + ", Password=" + Password +
+	  ", Phone=" + Phone + ", Address=" + Address + ", City=" + City +
+	  ", Postal_code=" + Postal_code + ", Country=" + Country +
+	  ", Registration_date=" + Registration_date + ", Status=" + Status +
+	  ", Date_of_birth=" + Date_of_birth + ", role=" + role + "]"; }
+	 
 	
 
 }

@@ -15,6 +15,8 @@
 		<div class="col-md-3">
 		<a href="login.jsp" class="btn btn-success"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
 		<a href="register.jsp" class="btn btn-primary text-white" ><i class="fa-solid fa-user-plus"></i>Register</a>
+		<a href="${pageContext.request.contextPath}/admin/profile">My Profile</a>
+
 		</div>
 
 	</div>

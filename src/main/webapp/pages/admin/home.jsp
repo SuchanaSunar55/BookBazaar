@@ -55,6 +55,17 @@ a:hover {
 			</a>
 		</div>
 		<div class="col-md-3">
+			<a href="all_users.jsp">
+				<div class="card">
+					<div class="card-body text-center">
+						<i class="fa-solid fa-user fa-4x text-warning"></i></i><br>
+						<h4>All Users</h4>
+
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-3">
 			<a href="logout.jsp">
 				<div class="card">
 					<div class="card-body text-center">
@@ -68,5 +79,6 @@ a:hover {
 	</div>
 
 	</div>
+	<%@include file="footer.jsp" %>
 </body>
 </html>
