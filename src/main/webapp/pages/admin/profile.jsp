@@ -55,7 +55,7 @@ if (adminName == null) {
     </style>
 </head>
 <body>
-<%@include file="navbar.jsp"%>
+<%@include file="../../all_component/navbar.jsp"%>
 <div class="wel text-center"><h1>Welcome!</h1>
 </div>
 <div class="profile-container">

@@ -20,7 +20,7 @@ public class Book {
     private String category;
     private String photo;
 
-    // Getters and Setters for all fields
+    // Getters and Setters
     public int getBookId() { return bookId; }
     public void setBookId(int bookId) { this.bookId = bookId; }
 
@@ -65,4 +65,13 @@ public class Book {
 
     public String getPhoto() { return photo; }
     public void setPhoto(String photo) { this.photo = photo; }
+
+    @Override
+    public String toString() {
+        return "Book [bookId=" + bookId + ", title=" + title + ", author=" + author + ", isbn=" + isbn +
+               ", publisher=" + publisher + ", publishedDate=" + publishedDate + ", price=" + price +
+               ", stockQuantity=" + stockQuantity + ", language=" + language + ", pages=" + pages +
+               ", bookDescription=" + bookDescription + ", rating=" + rating + ", status=" + status +
+               ", category=" + category + ", photo=" + photo + "]";
+    }
 }

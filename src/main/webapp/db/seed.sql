@@ -1,15 +1,17 @@
 -- user table
-INSERT INTO User VALUES
-(1, 'Alice Smith', 'alice@example.com', '1234567890', 'pass1', '123 Main St', 'New York', '10001', 'USA', '2023-01-10', 'Active', '1990-05-15'),
-(2, 'Bob Johnson', 'bob@example.com', '2345678901', 'pass2', '456 Elm St', 'Los Angeles', '90001', 'USA', '2023-02-15', 'Active', '1985-03-20'),
-(3, 'Carol Danvers', 'carol@example.com', '3456789012', 'pass3', '789 Oak St', 'Chicago', '60601', 'USA', '2023-03-20', 'Inactive', '1992-08-10'),
-(4, 'David Wright', 'david@example.com', '4567890123', 'pass4', '321 Maple St', 'Houston', '77001', 'USA', '2023-04-25', 'Active', '1988-12-05'),
-(5, 'Eva Green', 'eva@example.com', '5678901234', 'pass5', '654 Pine St', 'Phoenix', '85001', 'USA', '2023-05-30', 'Suspended', '1995-06-22'),
-(6, 'Frank Castle', 'frank@example.com', '6789012345', 'pass6', '987 Birch St', 'Philadelphia', '19101', 'USA', '2023-06-10', 'Active', '1987-11-17'),
-(7, 'Grace Lee', 'grace@example.com', '7890123456', 'pass7', '741 Cedar St', 'San Antonio', '78201', 'USA', '2023-07-05', 'Active', '1991-02-28'),
-(8, 'Harry Potter', 'harry@example.com', '8901234567', 'pass8', '852 Aspen St', 'San Diego', '92101', 'USA', '2023-08-01', 'Inactive', '1994-07-31'),
-(9, 'Ivy Queen', 'ivy@example.com', '9012345678', 'pass9', '963 Redwood St', 'Dallas', '75201', 'USA', '2023-09-09', 'Active', '1989-01-22'),
-(10, 'Jack Black', 'jack@example.com', '0123456789', 'pass10', '159 Spruce St', 'San Jose', '95101', 'USA', '2023-10-12', 'Suspended', '1993-05-10');
+INSERT INTO User (User_name, Email, Phone, Password, Address, City, Postal_code, Country, Registration_Date, Status, Date_of_birth, role) 
+VALUES 
+('John Doe', 'johndoe@example.com', '1234567890', 'password123', '123 Elm Street', 'New York', '10001', 'USA', '2025-05-04', 'Active', '1990-01-15', 'CUSTOMER'),
+('Jane Smith', 'janesmith@example.com', '0987654321', 'password456', '456 Oak Avenue', 'Los Angeles', '90001', 'USA', '2025-05-03', 'Active', '1985-06-20', 'CUSTOMER'),
+('Michael Brown', 'michaelb@example.com', '1122334455', 'password789', '789 Pine Road', 'Chicago', '60601', 'USA', '2025-05-02', 'Active', '1992-03-30', 'ADMIN'),
+('Emily Davis', 'emilydavis@example.com', '2233445566', 'password000', '101 Maple Lane', 'Houston', '77001', 'USA', '2025-05-01', 'Active', '1995-08-25', 'CUSTOMER'),
+('David Wilson', 'davidw@example.com', '3344556677', 'password111', '202 Birch Street', 'Phoenix', '85001', 'USA', '2025-04-30', 'Inactive', '1988-12-10', 'ADMIN'),
+('Sarah Miller', 'sarahmiller@example.com', '4455667788', 'password222', '303 Cedar Boulevard', 'Philadelphia', '19101', 'USA', '2025-04-29', 'Active', '1994-04-05', 'CUSTOMER'),
+('James Johnson', 'jamesj@example.com', '5566778899', 'password333', '404 Pine Street', 'San Antonio', '78201', 'USA', '2025-04-28', 'Active', '1990-07-19', 'CUSTOMER'),
+('Olivia Martinez', 'oliviamartinez@example.com', '6677889900', 'password444', '505 Willow Way', 'San Diego', '92101', 'USA', '2025-04-27', 'Inactive', '1998-11-03', 'ADMIN'),
+('Daniel Thomas', 'danielt@example.com', '7788990011', 'password555', '606 Redwood Drive', 'Dallas', '75201', 'USA', '2025-04-26', 'Active', '1993-02-17', 'CUSTOMER'),
+('Sophia Lee', 'sophialee@example.com', '8899001122', 'password666', '707 Maple Terrace', 'Austin', '73301', 'USA', '2025-04-25', 'Active', '1997-09-12', 'CUSTOMER');
+
 
 -- cart table
 
@@ -39,17 +41,19 @@ INSERT INTO `Order` VALUES
 (10, 10, '2024-02-10', 120.00, 'Credit Card', 'Paid', '159 Spruce St, San Jose', 'FedEx', 10.00, 'Delivered', 'TRK888888', '2024-02-14', '2024-02-15', 'Delivered', NULL, 0.00, 10.00, NULL);
 
 -- Book Table
-INSERT INTO Book VALUES
-(1, 'Book A', 'Author 1', 'ISBN001', 'Publisher 1', '2020-01-01', 25.99, 100, 'English', 300, 'Description 1', 4.5, 'Available'),
-(2, 'Book B', 'Author 2', 'ISBN002', 'Publisher 2', '2021-02-01', 15.50, 200, 'English', 150, 'Description 2', 4.0, 'Available'),
-(3, 'Book C', 'Author 3', 'ISBN003', 'Publisher 3', '2019-03-01', 20.00, 50, 'English', 500, 'Description 3', 3.8, 'Available'),
-(4, 'Book D', 'Author 4', 'ISBN004', 'Publisher 4', '2022-04-01', 30.00, 80, 'English', 400, 'Description 4', 4.7, 'Available'),
-(5, 'Book E', 'Author 5', 'ISBN005', 'Publisher 5', '2018-05-01', 18.75, 120, 'English', 350, 'Description 5', 4.1, 'Available'),
-(6, 'Book F', 'Author 6', 'ISBN006', 'Publisher 6', '2017-06-01', 22.00, 90, 'English', 280, 'Description 6', 3.9, 'Available'),
-(7, 'Book G', 'Author 7', 'ISBN007', 'Publisher 7', '2016-07-01', 19.99, 70, 'English', 310, 'Description 7', 4.3, 'Available'),
-(8, 'Book H', 'Author 8', 'ISBN008', 'Publisher 8', '2015-08-01', 27.50, 60, 'English', 290, 'Description 8', 4.6, 'Available'),
-(9, 'Book I', 'Author 9', 'ISBN009', 'Publisher 9', '2014-09-01', 23.99, 110, 'English', 330, 'Description 9', 4.2, 'Available'),
-(10, 'Book J', 'Author 10', 'ISBN010', 'Publisher 10', '2013-10-01', 29.95, 40, 'English', 320, 'Description 10', 4.4, 'Available');
+INSERT INTO Book (Title, Author, ISBN, Publisher, Published_Date, Price, Stock_quantity, Language, Pages, Book_Description, Rating, Status, Category, Photo) 
+VALUES 
+('The Great Gatsby', 'F. Scott Fitzgerald', '9780743273565', 'Scribner', '1925-04-10', 10.99, 150, 'English', 180, 'A story of the Jazz Age in the United States in the 1920s.', 4.5, 'Available', 'Fiction', 'great_gatsby.jpg'),
+('1984', 'George Orwell', '9780451524935', 'Secker & Warburg', '1949-06-08', 15.99, 200, 'English', 328, 'A dystopian novel set in a totalitarian society governed by Big Brother.', 4.8, 'Available', 'Dystopian', '1984.jpg'),
+('To Kill a Mockingbird', 'Harper Lee', '9780061120084', 'J.B. Lippincott & Co.', '1960-07-11', 12.50, 180, 'English', 281, 'A gripping novel about racial injustice in the American South.', 4.9, 'Available', 'Fiction', 'to_kill_a_mockingbird.jpg'),
+('Moby-Dick', 'Herman Melville', '9781503280786', 'Harper & Brothers', '1851-10-18', 14.99, 120, 'English', 720, 'The epic tale of Captain Ahab’s obsession with hunting down Moby Dick, the giant white whale.', 4.3, 'Available', 'Adventure', 'moby_dick.jpg'),
+('Pride and Prejudice', 'Jane Austen', '9781503290563', 'T. Egerton', '1813-01-28', 9.99, 220, 'English', 432, 'A romantic novel that explores the issues of class, marriage, and morality in early 19th century England.', 4.7, 'Available', 'Romance', 'pride_and_prejudice.jpg'),
+('The Catcher in the Rye', 'J.D. Salinger', '9780316769488', 'Little, Brown and Company', '1951-07-16', 11.99, 130, 'English', 277, 'A story of teenage angst and alienation as told through the eyes of Holden Caulfield.', 4.0, 'Available', 'Fiction', 'catcher_in_the_rye.jpg'),
+('The Hobbit', 'J.R.R. Tolkien', '9780261102217', 'George Allen & Unwin', '1937-09-21', 13.50, 250, 'English', 310, 'The adventure of Bilbo Baggins as he sets off to help dwarves reclaim their home.', 4.6, 'Available', 'Fantasy', 'the_hobbit.jpg'),
+('The Alchemist', 'Paulo Coelho', '9780061122415', 'HarperOne', '1988-11-01', 8.99, 300, 'English', 208, 'A philosophical book about a young shepherd on a journey to find a treasure.', 4.4, 'Available', 'Adventure', 'the_alchemist.jpg'),
+('Brave New World', 'Aldous Huxley', '9780060850524', 'Chatto & Windus', '1932-09-01', 13.25, 170, 'English', 311, 'A dystopian novel that explores a future society controlled by technology and mass production.', 4.2, 'Available', 'Dystopian', 'brave_new_world.jpg'),
+('The Lord of the Rings', 'J.R.R. Tolkien', '9780544003415', 'George Allen & Unwin', '1954-07-29', 25.99, 100, 'English', 1216, 'The epic tale of Frodo Baggins and his companions on a quest to destroy the One Ring.', 4.9, 'Available', 'Fantasy', 'lord_of_the_rings.jpg');
+
 
 -- Genre Table
 INSERT INTO Genre VALUES

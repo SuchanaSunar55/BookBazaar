@@ -33,7 +33,6 @@ public class AllBooksServlet extends HttpServlet {
 
             response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Database connection error.");
          
-
         }
         
     }

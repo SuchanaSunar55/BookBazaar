@@ -8,7 +8,7 @@
 <%@include file="../allCss.jsp"%>
 </head>
 <body>
-	<%@include file="navbar.jsp"%>
+	<%@include file="../../all_component/navbar.jsp"%>
 	<h3 class="text-center">Hello Admin</h3>
 	<table class="table table-striped">
 		<thead class="bg-primary text-white">
@@ -66,7 +66,7 @@
 	</table>
 
 
-<%@include file="footer.jsp" %>>
+<%@include file="../../all_component/footer.jsp" %>>
 
 </body>
 </html>

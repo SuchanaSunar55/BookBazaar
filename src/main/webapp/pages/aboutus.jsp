@@ -72,7 +72,7 @@
                     Suchana effectively managed the team and led the development of the admin portal. She ensured timely progress, coordinated tasks, and kept the team focused through every stage of the project.
                 </li>
                 <li>
-                    <strong>Lalumaya</strong> – <em>Managed User Portal</em><br>
+                    <strong>Prapti Lalchan</strong> – <em>Managed User Portal</em><br>
                     With a keen analytical mindset, Prapti was responsible for developing and refining the user portal. Her contributions ensured a seamless experience for end-users.
                 </li>
                 <li>
@@ -81,11 +81,11 @@
                 </li>
                 <li>
                     <strong>Esmyker Adhikari</strong> – <em>Tester</em><br>
-                    Esmyker played a crucial role in system validation and testing. She rigorously checked features and maintained data integrity to ensure a stable and error-free product.
+                    Esmyker played a crucial role in system validation and testing. He rigorously checked features and maintained data integrity to ensure a stable and error-free product.
                 </li>
                 <li>
                     <strong>Bednidhi Khanal</strong> – <em>Research</em><br>
-                    Bednidhi contributed by assisting with research, documentation, and team coordination tasks, helping maintain the project's workflow.
+                    Bednidhi contributed by assisting with research, documentation, and team coordination tasks, helping maintain the project's workflow also managed about us and contact us page.
                 </li>
             </ul>
         </div>

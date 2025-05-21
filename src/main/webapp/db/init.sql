@@ -17,7 +17,7 @@ CREATE TABLE User (
 
 -- CART TABLE
 CREATE TABLE Cart (
-    Cart_ID INT PRIMARY KEY,
+    Cart_ID INT AUTO_INCREMENT PRIMARY KEY,
     User_ID INT,
     Created_At DATETIME,
     Update_At DATETIME,

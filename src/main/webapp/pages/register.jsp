@@ -10,7 +10,7 @@
 <title>EBook Register</title>
 <%@ include file="../all_component/allCss.jsp"%>
 </head>
-<body style="background-color: #F0F6D5">
+<body style="background-color: #f3f3f3">
 	<%@ include file="../all_component/navbar.jsp"%>
 	<div class="container p-2">
 		<div class="row">

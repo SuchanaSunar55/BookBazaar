@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-<%@include file="navbar.jsp" %>
+<%@include file="../../all_component/navbar.jsp" %>
     <h2>All Registered Users</h2>
     <table>
         <thead>
@@ -56,5 +56,5 @@
         </tbody>
     </table>
 </body>
-<%@include file="footer.jsp"%>
+<%@include file="../../all_component/footer.jsp"%>
 </html>

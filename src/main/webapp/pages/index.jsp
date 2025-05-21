@@ -4,276 +4,83 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Ebook:Index</title>
+<title>BookBazaar | Home</title>
 <%@include file="../all_component/allCss.jsp"%>
-<style type="text/css">
-.back-img {
-	background: url("img/b.jpg");
-	height: 50vh;
-	weight: full;
-	background-repeat: no-repeat;
-	background-size: cover;
+<style>
+body {
+	background-color: #f3f3f3;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
-.crd-ho:hover{
-background-color:#D9E78F;
+.intro-box {
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	text-align: center;
+	margin-top: 40px;
 }
 
+.intro-box h2 {
+	font-weight: bold;
+}
+
+.intro-box p {
+	font-size: 1.1rem;
+	color: #555;
+}
+
+.content {
+	flex: 1;
+}
 </style>
 </head>
-<body style="background-color:#F9F9DE">
+<body>
 	<%@include file="../all_component/navbar.jsp"%>
-	<div class="container-fluid back-img">
-		<h2 class="text-center text-white">
-			<i class="fa-solid fa-book-open-reader"></i> Welcome to E-Book
-			Management System
-		</h2>
-	</div>
-	
-	<%@ page import="java.sql.Connection" %>
-<%@ page import="com.EBook.controller.controller.database.DBConnect" %>
-	
-	<% Connection conn=DBConnect.getConn(); 
-	out.println(conn);%>
-	
-<!-- Literature books starts -->
-	<div class="container" >
-		<h3 class="text-center">Literature</h3>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/whitenight.png"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>White Night</p>
-						<p>Fyodor Dostoevsky</p>
-						<p>Categories:Literature</p>
-						<div class="row">
-						<a href="" class="btn btn-danger btn-sm "><i class="fa-solid fa-cart-plus"></i>Add to Cart</a>
-						<a href="" class="btn btn-success btn-sm ml-1">View Details</a>
-						<a href="" class="btn btn-danger btn-sm">999<i class="fa-solid fa-dollar-sign"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/bb.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>Pride and Prejudice</p>
-						<p>Jane Austen</p>
-						<p>Categories:Literature</p>
-						<div class="row">
-						<a href="" class="btn btn-danger btn-sm "><i class="fa-solid fa-cart-plus"></i>Add to Cart</a>
-						<a href="" class="btn btn-success btn-sm ml-1">View Details</a>
-						<a href="" class="btn btn-danger btn-sm ">999</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/metamorphosis.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>Metamorphosis</p>
-						<p>Franz Kafka</p>
-						<p>Categories:Literature</p>
-						<div class="row">
-						<a href="" class="btn btn-danger btn-sm"><i class="fa-solid fa-cart-plus"></i>Add to Cart</a>
-						<a href="" class="btn btn-success btn-sm ml-1">View Details</a>
-						<a href="" class="btn btn-danger btn-sm ">999</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/tokillamockingbird.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>To Kill A Mockingbird</p>
-						<p>Harper Lee</p>
-						<p>Categories:Literature</p>
-						<div class="row">
-						<a href="" class="btn btn-danger btn-sm "><i class="fa-solid fa-cart-plus"></i>Add to Cart</a>
-						<a href="" class="btn btn-success btn-sm ml-1">View Details</a>
-						<a href="" class="btn btn-danger btn-sm">999</a>
-						</div>
-					</div>
-				</div>
-			</div>
 
-		</div>
-		<div class="text-center mt-2">
-		<a href="" class="btn btn-danger btn-sm">View All</a>
+	<div class="content">
+		<div class="container">
+			<div class="intro-box">
+				<h2>
+					<i class="fa-solid fa-book-open-reader"></i> Welcome to BookBazaar
+				</h2>
+				<p>At BookBazaar, we believe books are more than just stories —
+					they're gateways to knowledge, imagination, and growth. Browse our
+					wide range of titles, find your next favorite read, and enjoy a
+					seamless shopping experience.</p>
+				<p>Start exploring our collections today!</p>
+				<div class="card h-100 shadow-sm rounded">
+					<p>Please Login OR Register to Start!!</p>
+				</div>
+			</div>
 		</div>
 	</div>
-<!-- Literature Books ends -->
-<hr>
-<!-- Academics Starts -->
-		<div class="container" >
-		<h3 class="text-center">Academics</h3>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/biology.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>Biology</p>
-						<p>Arvind K.Keshari </p>
-						<p>Khaga Raj Ghimire</p>
-						<p>Categories:Academics</p>
-						<div class="row">
-						<a href="" class="btn btn-danger btn-sm "><i class="fa-solid fa-cart-plus"></i>Add to Cart</a>
-						<a href="" class="btn btn-success btn-sm ml-1">View Details</a>
-						<a href="" class="btn btn-danger btn-sm ">999</a>
-						</div>
-					</div>
-				</div>
+	<div class="container mt-5">
+		<h3 class="text-center mb-4">Why Choose BookBazaar?</h3>
+		<div class="row text-center">
+			<div class="col-md-4 mb-4">
+				<i class="fa-solid fa-book fa-2x mb-2"></i>
+				<h5>Vast Collection</h5>
+				<p>Explore a wide range of titles from fiction to self-help and
+					everything in between.</p>
 			</div>
-			
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/physics.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>Physics</p>
-						<p>Rajendra Pd Koirala</p>
-						<p>Prajjwal Khanal</p>
-						<p>Categories:Academics</p>
-						<div class="row">
-						<a href="" class="btn btn-danger btn-sm "><i class="fa-solid fa-cart-plus"></i>Add to Cart</a>
-						<a href="" class="btn btn-success btn-sm ml-1">View Details</a>
-						<a href="" class="btn btn-danger btn-sm">999</a>
-						</div>
-					</div>
-				</div>
+			<div class="col-md-4 mb-4">
+				<i class="fa-solid fa-truck-fast fa-2x mb-2"></i>
+				<h5>Fast Delivery</h5>
+				<p>Quick and safe delivery to your doorstep with real-time order
+					tracking.</p>
 			</div>
-			
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/speaking-js.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>Speaking JS</p>
-						<p>Dr.Axel Rauschmayer</p>
-						<p>Categories:Academics</p>
-						<div class="row">
-						<a href="" class="btn btn-danger btn-sm "><i class="fa-solid fa-cart-plus"></i>Add to Cart</a>
-						<a href="" class="btn btn-success btn-sm ml-1">View Details</a>
-						<a href="" class="btn btn-danger btn-sm ">999</a>
-						</div>
-					</div>
-				</div>
+			<div class="col-md-4 mb-4">
+				<i class="fa-solid fa-star fa-2x mb-2"></i>
+				<h5>Trusted by Readers</h5>
+				<p>Join thousands of satisfied readers who trust BookBazaar for
+					their reading needs.</p>
 			</div>
-			
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/python.png"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>Python</p>
-						<p>Micha Gorelick</p>
-						<p>Ian Ozsvald</p>
-						<p>Categories:Academics</p>
-						<div class="row">
-						<a href="" class="btn btn-danger btn-sm "><i class="fa-solid fa-cart-plus"></i>Add to Cart</a>
-						<a href="" class="btn btn-success btn-sm ml-1">View Details</a>
-						<a href="" class="btn btn-danger btn-sm ">999</a>
-						</div>
-					</div>
-				</div>
-			</div>
+		</div>
+	</div>
 
-		</div>
-		<div class="text-center mt-2">
-		<a href="" class="btn btn-danger btn-sm">View All</a>
-		</div>
-	</div>
-<!--Academics ends  -->
-<hr>
-<!--History starts  -->	
-		<div class="container" >
-		<h3 class="text-center">History</h3>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/ancientworld.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>Ancient World</p>
-						<p>Susan Wise Bauer</p>
-						<p>Categories:History</p>
-						<div class="row">
-						
-						<a href="" class="btn btn-success btn-sm ml-5">View Details</a>
-						<a href="" class="btn btn-danger btn-sm ml-1">999</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/worldhistory.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>World History</p>
-						<p>USBORNE</p>
-						<p>Categories:History</p>
-						<div class="row">
-						
-						<a href="" class="btn btn-success btn-sm ml-5">View Details</a>
-						<a href="" class="btn btn-danger btn-sm ml-1">999</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/nepalhistory.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>History Of Nepal</p>
-						<p>Daniel Wright</p>
-						<p>Categories:History</p>
-						<div class="row">
-						
-						<a href="" class="btn btn-success btn-sm ml-5">View Details</a>
-						<a href="" class="btn btn-danger btn-sm ml-1">999</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-3">
-				<div class="card crd-ho">
-					<div class="card-body text-center">
-						<img alt="" src="book/PrithiviNS.jpg"
-							style="width: 150px; height: 200px" class="img.thumblin">
-						<p>Prithivi Narayan Shah</p>
-						<p> Shree Prasad Upadhdya Ghimire</p>
-						<p>Categories:History</p>
-						<div class="row">
-						<a href="" class="btn btn-success btn-sm ml-1">View Details</a>
-						<a href="" class="btn btn-danger btn-sm ml-1">999</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<div class="text-center mt-2">
-		<a href="" class="btn btn-danger btn-sm">View All</a>
-		</div>
-	</div>
-<!--Old Books ends  -->	
-	<%@include file="../all_component/footer.jsp" %>
+	<%@include file="../all_component/footer.jsp"%>
 </body>
 </html>
