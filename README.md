@@ -1,2 +1,2 @@
 # BookBazaar
-This is for APT Coursework
+This is APT Coursework
